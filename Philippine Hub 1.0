@@ -18,6 +18,11 @@
 		Icon = "rbxassetid://4483345998",
 		PremiumOnly = false
 	})
+    local MurderTab = Window:MakeTab({
+		Name = "Murder Mystery 2",
+		Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+	})
 	---Section
 	local Section = UniversalTab:AddSection({
 		Name = "Universal Scripts/Local Scripts"
@@ -252,3 +257,17 @@
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
 		  end    
 	})
+    MurderTab:AddButton({
+        Name = "Vynixius MM2 (Old Ui)",
+        Callback = function()
+            loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+          end    
+    })
+    MurderTab:AddButton({
+        Name = "Eclipse Hub (Best MM2 Hub)",
+        Callback = function()
+            getgenv().mainKey = "nil"
+
+            local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()            
+          end    
+    })
