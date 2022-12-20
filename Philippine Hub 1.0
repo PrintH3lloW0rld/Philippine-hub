@@ -23,6 +23,12 @@
 		Icon = "rbxassetid://4483345998",
 		PremiumOnly = false
 	})
+    local KingTab = Window:MakeTab({
+        Name = "King Legacy",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
 	---Section
 	local Section = UniversalTab:AddSection({
 		Name = "Universal Scripts/Local Scripts"
@@ -269,5 +275,56 @@
             getgenv().mainKey = "nil"
 
             local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()            
+          end    
+    })
+    KingTab:AddButton({
+        Name = "Hub (Idk whats the name)",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/dasdokasdias/Fps/Loading.lua"))()
+          end    
+    })
+    KingTab:AddButton({
+        Name = "Noob Hub",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/kl'))()
+          end    
+    })
+    KingTab:AddButton({
+        Name = "River Hub",
+        Callback = function()
+            pcall(function()
+                loadstring(game:HttpGet("http://riverhub.xyz/" .. tostring(game.PlaceId) .. ".lua"))()
+              end)
+          end    
+    })
+    KingTab:AddButton({
+        Name = "Quartz Mukuro Hub",
+        Callback = function()
+            loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+          end    
+    })
+    KingTab:AddButton({
+        Name = "Maru Hub",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/joi-droid/MaruHubBF/main/GOHANSSJ3'))()
+          end    
+    })
+    KingTab:AddButton({
+        Name = "Hyper Hub",
+        Callback = function()
+            repeat wait() until game:IsLoaded()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shisobad/new/main/script.lua"))()
+          end    
+    })
+    KingTab:AddButton({
+        Name = "Kaizen Hub",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/GameHub", true))()
+          end    
+    })
+    KingTab:AddButton({
+        Name = "No Assigned Function yet thank u",
+        Callback = function()
+                  print("button pressed")
           end    
     })
